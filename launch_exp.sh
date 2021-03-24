@@ -1,0 +1,2 @@
+conda activate pytorch
+python main.py --sigma 150 --alpha 0 --dataset mnist --model cnn --n 100 --q 0.1 --epoch 5 --local_ep 5 --local_bs 10 --lr 0.01 --momentum 0.5 --fedprox_mu 1 --fedprox_momentum 0.9
