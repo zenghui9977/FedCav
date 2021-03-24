@@ -789,3 +789,181 @@ whole test set Loss: 147.38
 |------ FedProx ------|
 whole test set Accuracy: 52.69%
 whole test set Loss: 116.67
+
+ | Global Training Round : 1 |
+
+----------------------------------------------------
+Client 85 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [135.4073133468628, 44.67011279705912, 4.648710644056337, 1.3316736444539856]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [142.8389275074005, 53.909019857645035, 7.632088654947893, 3.436144385144871]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [140.28146719932556, 47.56110311020166, 20.469178158789873, 17.905679058283567]
+----------------------------------------------------
+Client 62 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [133.7030816078186, 41.551585932960734, 4.797110416784562, 3.1377735231799306]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [141.67656254768372, 46.02997819450684, 3.921813055931125, 4.049818025428976]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [139.98057198524475, 58.436784975230694, 18.464402610436082, 31.78290857747197]
+----------------------------------------------------
+Client 90 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [137.25193524360657, 41.97811611054203, 10.285107343542016, 1.1408475669159088]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [135.4062888622284, 48.049457021057606, 4.707177583976581, 1.2743277736277605]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [133.80326318740845, 41.548008443787694, 15.583944350481033, 16.384179811924696]
+----------------------------------------------------
+Client 14 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [135.80332684516907, 54.660441825166345, 4.431225041775178, 0.84294763217531]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [143.04621624946594, 53.66261725500226, 2.360138467794741, 1.6635262352065183]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [138.3985755443573, 52.73219648748636, 33.080604020971805, 29.298124954104424]
+----------------------------------------------------
+Client 45 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [144.25343537330627, 44.016180894337595, 5.053964919973986, 2.7255831737651413]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [142.78217720985413, 50.30042461305857, 3.6590310727874567, 2.4936518661095306]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [137.3877763748169, 39.75960083678365, 13.73464896157384, 13.433667551726103]
+----------------------------------------------------
+Client 27 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [141.67980790138245, 60.857955403625965, 21.73863329323285, 8.078320894142962]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [136.93658709526062, 58.40306204557419, 17.037473557982594, 6.3577115901225625]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [142.20200514793396, 58.16424459218979, 38.19142569601536, 41.492637887597084]
+----------------------------------------------------
+Client 99 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [144.56639742851257, 51.90537839010358, 6.853959364838602, 0.9677312137794161]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [143.143310546875, 60.16786605119705, 4.135656718761311, 0.12192532648077758]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [135.65097403526306, 51.244678139686584, 18.18048584461212, 22.091566391289234]
+----------------------------------------------------
+Client 6 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [137.68540835380554, 52.70235155336559, 6.237889098469168, 1.8556351035222178]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [138.11009192466736, 57.05610482767224, 6.810790965915658, 2.4816589076435775]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [144.71988224983215, 47.59446905553341, 24.891777917277068, 19.063662000000477]
+----------------------------------------------------
+Client 3 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [142.6716284751892, 55.57919783145189, 5.804787604603916, 3.288286744733341]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [136.388929605484, 59.73433989286423, 13.652325313858455, 2.5201062547166657]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [143.20322227478027, 51.866907343268394, 19.61956666968763, 18.51733984053135]
+----------------------------------------------------
+Client 1 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [142.94580721855164, 58.92207174003124, 14.836290942272171, 5.979308495181613]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [136.4591681957245, 64.86523696035147, 34.53164455294609, 15.151356316055171]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [140.68833255767822, 60.665118373930454, 35.110830321908, 26.117973774671555]
+tensor([0.1864, 0.1864, 0.0026, 0.1864, 0.1864, 0.0120, 0.1864, 0.0388, 0.0069,
+        0.0075])
+|---- Training Result in epoch 1 global rounds:
+|------ FedAvg ------|
+whole test set Accuracy: 16.98%
+whole test set Loss: 173.84
+|------ FedCav ------|
+whole test set Accuracy: 14.48%
+whole test set Loss: 221.88
+|------ FedProx ------|
+whole test set Accuracy: 16.99%
+whole test set Loss: 182.41
+
+ | Global Training Round : 2 |
+
+----------------------------------------------------
+Client 88 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [100.58441507816315, 21.66904191946378, 2.676588913454907, 0.6699647680361522]
+---------------------
+the FedCav is training now....
+---------------------
+local model training finished, the epoch loss is [73.97696186602116, 17.203394275855317, 2.6085377299168613, 1.4646833387523657]
+---------------------
+the FedProx is training now....
+---------------------
+local model training finished, the epoch loss is [145.23774099349976, 34.36938764760271, 28.805377189069986, 31.8886851798743]
+----------------------------------------------------
+Client 56 training......
+---------------------
+the FedAvg is training now....
+---------------------
+local model training finished, the epoch loss is [146.35263895988464, 21.175616929440253, 1.905874325026522, 0.37299904345604773]
