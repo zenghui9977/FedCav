@@ -1,11 +1,23 @@
 import os
 import torch
+import sys
 import csv
 import pandas as pd
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 from models import MLP, CNNMnist, Cifar_model, Cifar_model2, FMnist_model, FMnist_model2
 from local_update import DatasetSplit
+
+class Logger(object):
+    def __init__(self, log_file_name="Default.log"):
+        self.terminal = sys.stdout
+        self.log = open(log_file_name, 'a')
+    def write(self, message):
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        pass
 
 def get_data(args):
     if args.dataset == 'mnist':

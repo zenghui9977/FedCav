@@ -1,14 +1,17 @@
 import time
 import copy
+import sys
+
 import numpy as np
 from aggregation import FedAvgAggregation_mode_2, FedCavAggregation_with_clip_loss
 from local_update import Local_Update
 from hyper_parameters import arg_parser
-from utils import get_data, init_model, inference, save_info, print_training_type
+from utils import get_data, init_model, inference, save_info, print_training_type, Logger
 from create_clients import noniid_equal_bias_mix, noniid_equal_label_sigma_alpha
 
 
 start_time = time.time()
+sys.stdout = Logger("log.log") 
 args = arg_parser()
 
 # use GPU
@@ -147,7 +150,7 @@ for e in range(args.epoch):
     # print("part test set Loss: {:.2f}".format(fedprox_spec_loss))
 
 model_name = str(args.dataset) + '_sigma_' + str(args.sigma) + '_alpha_' + str(args.alpha) + '.pth'
-fedprox_model_name = str(args.dataset) + '_sigma_' + str(args.sigma) + '_mu_' + str(args.mu) + '.pth'
+fedprox_model_name = str(args.dataset) + '_sigma_' + str(args.sigma) + '_mu_' + str(args.fedprox_mu) + '.pth'
 torch.save(FedAvg_model, model_dir + FedAvg_model_dir + model_name)
 torch.save(FedCav_model, model_dir + FedCav_model_dir + model_name)
 torch.save(FedProx_model, model_dir + FedProx_model_dir + fedprox_model_name)
