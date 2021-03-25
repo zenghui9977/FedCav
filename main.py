@@ -3,7 +3,7 @@ import copy
 import sys
 import torch
 import numpy as np
-from aggregation import FedAvgAggregation_mode_2, FedCavAggregation_with_clip_loss
+from aggregation import FedAvgAggregation_mode_2, FedAvgAggregation_mode_1,FedCavAggregation_with_clip_loss
 from local_update import Local_Update
 from hyper_parameters import arg_parser
 from utils import get_data, init_model, inference, save_info, print_training_type, Logger
@@ -11,7 +11,7 @@ from create_clients import noniid_equal_bias_mix, noniid_equal_label_sigma_alpha
 
 
 start_time = time.time()
-sys.stdout = Logger("log.log") 
+sys.stdout = Logger("sigma_150.log") 
 args = arg_parser()
 
 # use GPU
@@ -100,7 +100,7 @@ for e in range(args.epoch):
     # FedCav_model_weights = FedCavAggregation_with_clip_update(FedCav_model_weights, fedcav_clients_weights, ev_loss)
     FedCav_model.load_state_dict(FedCav_model_weights)
     # FedProx
-    FedProx_model_weights = FedAvgAggregation_mode_2(fedprox_clients_weights, client_datanum)
+    FedProx_model_weights = FedAvgAggregation_mode_1(fedprox_clients_weights)
     FedProx_model.load_state_dict(FedProx_model_weights)
 
     # whole testset Inference
@@ -149,11 +149,12 @@ for e in range(args.epoch):
     # print("part test set Accuracy: {:.2f}%".format(100 * fedprox_spec_acc))
     # print("part test set Loss: {:.2f}".format(fedprox_spec_loss))
 
-model_name = str(args.dataset) + '_sigma_' + str(args.sigma) + '_alpha_' + str(args.alpha) + '.pth'
-fedprox_model_name = str(args.dataset) + '_sigma_' + str(args.sigma) + '_mu_' + str(args.fedprox_mu) + '.pth'
-torch.save(FedAvg_model, model_dir + FedAvg_model_dir + model_name)
-torch.save(FedCav_model, model_dir + FedCav_model_dir + model_name)
-torch.save(FedProx_model, model_dir + FedProx_model_dir + fedprox_model_name)
+# model_name = str(args.dataset) + '_sigma_' + str(args.sigma) + '_alpha_' + str(args.alpha) + '.pth'
+# fedprox_model_name = str(args.dataset) + '_sigma_' + str(args.sigma) + '_mu_' + str(args.fedprox_mu) + '.pth'
+
+# torch.save(FedAvg_model, model_dir + FedAvg_model_dir + model_name)
+# torch.save(FedCav_model, model_dir + FedCav_model_dir + model_name)
+# torch.save(FedProx_model, model_dir + FedProx_model_dir + fedprox_model_name)
 
 result_folder = '/result/'
 name_list = ["FedAvg_accuracy", "FedCav_accuracy", "FedProx_accuracy", "FedAvg_loss", "FedCav_loss", "FedProx_loss"]
